@@ -1,0 +1,38 @@
+<div class="login-page">
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+          <div class="card-header text-center">
+            <a href="/" class="h1">base<b>Angular</b></a>
+          </div>
+          <div class="card-body">
+            <p class="login-box-msg">Bienvenido al Administrador</p>
+      
+            <div class="input-group mb-3">
+                <input type="text" [(ngModel)]="usuario" #ctrl="ngModel" class="form-control" placeholder="Usuario">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" [(ngModel)]="password" #ctrl="ngModel" class="form-control" placeholder="Contraseña">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+      
+            <div class="social-auth-links text-center mt-2 mb-3">
+              <a href="javascript:void(0);" (click)="LoginUsuarioByCiAndPass()" class="btn btn-block btn-success">
+                <i class="fab fa-google-plus mr-2"></i> INGRESAR
+              </a>
+            </div>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+</div>
